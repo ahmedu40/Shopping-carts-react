@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.Container{
+    max-width: 1110px;
+    margin: 0 auto;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo{
+    
+    text-decoration: none;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight: 800;
+    color: #1877c9;
+    /* font-size: 18px; */
+
+}
+
+.links a{
+
+    text-decoration: none;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size:22px;
+    color: #000;
+
+
+}
+
+.cart{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #1877c9;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 140px;
+}
+
+.card{
+
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-top: 10PX;
+}
+
+.card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    padding: 20px 0;
+    background: rgba(1,1,31,0.405);
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+  
+}
+
+.card span{
+
+      margin: 10px;
+
+}
+
+.card button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px;
+
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    margin-top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-primary{
+    background-color: #1877c9;
+}
+
+.btn-secondary{
+    background-color: rgb(224, 88, 64 );
+}
+
+.cart-container{
+    background-color: #fff;
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+    grid-gap: 10px;
+    padding: 30px;
+    place-items: center;
+  
+}
+
+.cart-products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+    border-right:1px solid #ccc ;
+}
+
+.cart-product {
+    padding: 10px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border-top: 1px solid #ccc;
+    place-content: center;
+}
+
+.cart-product img{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cart-title-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cart-title-img *{
+    padding:  0 10px;
+}
+
+.cart-product span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.delete{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.total-price{
+
+    border-top: 1px solid #ccc;
+}
+
+.price{
+    margin-top: 30px;
+}
+
+.Payment_Card{
+
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Payment_Card:hover,
+.Payment_Card.selected{
+
+    background-color: rgba(24,118,201,0.159);
+    border-color: rgb(8, 92, 165);
+}
+.form-control{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 12px ;
+    font-size: 20px;
+    width: 82%;
+}
+
+.form-control:focus{
+   border: 2px solid #1877c9 !important;
+      outline: none !important;
+    box-shadow: none !important;
+ }
+
+.btn-proceed{
+
+    width: 94%;
+    margin: 10px 12px;
+    padding: 20px;
+    background-color: rgb(24, 119, 201);
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.title{
+    margin-left: 120px;
+}
