@@ -49,7 +49,7 @@ const Payment = () => {
 
     if(selectMethod === "evc" || selectMethod === "zaad"){
 
-      phones = "0614778941"
+      phones = "0614778941";
     }else{
       phones = "0624778941";
     }
