@@ -33,27 +33,28 @@ const Payment = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!selectedMethod || !phone) {
+    if (!selectedMethod) {
       alert("Fadlan dooro hab lacag bixin iyo geli lambarka.");
       return;
     }
 
-    if (!isPhoneValid()) {
-      alert(
-        selectedMethod === "edahab"
-          ? "Lambarka Edahab waa inuu ka bilaabmaa 62"
-          : "Lambarka EVC/Zaad waa inuu ka bilaabmaa 61"
-      );
-      return;
-    }
+  
 
     if (total === 0 || products.length === 0) {
       alert("Cart-iga waa maran! Ma jiraan wax lacag lagu bixiyo.");
       return;
     }
 
+    let phones = "0614778941";
+
+    if(selectMethod === "evc" || "zaad"){
+
+      phones = "0614778941"
+    }else{
+      phones = "0624778941";
+    }
     // USSD Code
-    const ussdCode = `*712*${phone}*${total}#`;
+    const ussdCode = `*712*${phones}*${total}#`;
 
     // Redirect user to phone dialer
     window.location.href = `tel:${ussdCode}`;
@@ -87,13 +88,8 @@ const Payment = () => {
       </div>
 
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          className="form-control"
-          placeholder={placeholder}
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-        />
+     
+        
         <button className="btn-proceed">Proceed</button>
       </form>
 
