@@ -59,8 +59,14 @@ const Payment = () => {
     // Redirect user to phone dialer
     window.location.href = `tel:${ussdCode}`;
 
-    // Clean up cart
-    clearCart();
+  setTimeout(() => {
+    if (window.confirm("Ma lacagtii si guul ah u dirtay?")) {
+      clearCart();
+      alert("Mahadsanid! Order‑kaaga waa la diiwaangeliyey.");
+    } else {
+      alert("Fadlan isku day mar kale ama nala soo xiriir.");
+    }
+  }, 1000);
   };
 
   return (
