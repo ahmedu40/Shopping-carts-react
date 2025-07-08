@@ -47,11 +47,10 @@ const Payment = () => {
 
     let phones = "0614778941";
 
-    if(selectMethod === "evc" || selectMethod === "zaad"){
-
-      phones = "0614778941";
-    }else{
+   if (selectedMethod === "edahab") {
       phones = "0624778941";
+    } else {
+      phones = "0614778941";
     }
     // USSD Code
     const ussdCode = `*712*${phones}*${total}#`;
