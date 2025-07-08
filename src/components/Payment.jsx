@@ -47,7 +47,7 @@ const Payment = () => {
 
     let phones = "0614778941";
 
-    if(selectMethod === "evc" || "zaad"){
+    if(selectMethod === "evc" || selectMethod === "zaad"){
 
       phones = "0614778941"
     }else{
